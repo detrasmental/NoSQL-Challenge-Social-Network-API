@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.4"
+  },
+  "name": "social-network-api",
+  "description": "An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detrasmental/NoSQL-Challenge-Social-Network-API.git"
+  },
+  "author": "detrasmental",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/detrasmental/NoSQL-Challenge-Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/detrasmental/NoSQL-Challenge-Social-Network-API#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
