@@ -1,7 +1,5 @@
-// Require Thoughts and Users Models
 const {Thoughts, Users} = require('../models');
 
-// Set up Thoughts Controller
 const thoughtsController = {
 
     //Create new thought
@@ -87,12 +85,11 @@ const thoughtsController = {
 
      // Add Reaction
      addReaction({params, body}, res) {
-        Thoughts.findOneAndUpdate({_id: params.thoughtsId}, {$push: {reactions: body}}, {new: true, runValidators: true})
-            .populate({
-                path: 'reactions',
-                select: '-__v'
-            })
-            .select('-__v')
+        Thoughts.findOneAndUpdate(  
+            {_id: params.thoughtId},
+            {$push: {reactions: body}},
+            { new: true, runValidators: true }
+        )
             .then(dbThoughtsData => {
                 if (!dbThoughtsData) {
                     res.status(404).json({message: 'No thoughts with this ID!'});
@@ -105,8 +102,12 @@ const thoughtsController = {
     },
 
     // Delete reaction by ID
-    deleteReaction({params}, res) {
-        Thoughts.findOneAndUpdate({_id: params.thoughtsId}, {$pull: {reactions: {reactionId: params.reactionId}}}, {new : true})
+    deleteReaction({params}, res){
+        Thoughts.findOneAndUpdate(
+            {_id: params.thoughtId},
+            {$pull: {reactions: {reactionId : params.reactionId}}},
+            { new: true, runValidators: true }
+        )
         .then(dbThoughtsData => {
             if (!dbThoughtsData) {
                 res.status(404).json({message: 'No thoughts with this ID!'});

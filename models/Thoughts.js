@@ -1,7 +1,7 @@
 const { Schema, model, Types } = require('mongoose');
 const moment = require('moment');
 
-const ReactionsSchema = new Schema(
+const ReactionSchema = new Schema(
     {
         reactionId: {
             type: Schema.Types.ObjectId,
@@ -10,7 +10,7 @@ const ReactionsSchema = new Schema(
         reactionBody: {
             type: String,
             required: true,
-            maxlength: 300
+            validate: [({ length }) => length <= 280, 'Reactions cannot be more than 280 characters long!']
         },
         username: {
             type: String,
@@ -35,7 +35,7 @@ const ThoughtsSchema = new Schema(
             type: String,
             required: true,
             minlength: 1,
-            maxlength: 300
+            validate: [({ length }) => length <= 280, 'Thoughts cannot be more than 280 characters long!']
         },
         createdAt: {
             type: Date,
@@ -46,7 +46,7 @@ const ThoughtsSchema = new Schema(
             type: String,
             required: true
         },
-        reactions: [ReactionsSchema]
+        reactions: [ReactionSchema]
     },
     {
         toJSON: {
