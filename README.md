@@ -19,3 +19,31 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
   
  </div>
+
+## Description
+An API built for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. 
+
+## Table of Contents
+- [Description](#Description)
+- [User Story](#User)
+- [Credits](#Credits)
+- [Contribution](#contributes)
+- [Contact Me](#Contact)
+
+
+## User Story
+![]()
+
+## Contribution
+As this is homerwork, I'm not currently accepting contributions. Please feel free to reach out with suggestions on how to make it better though. Thank you!
+
+## Credits
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)
+![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
+
+
+## Contact
+Find me on GitHub: [detrasmental](https://github.com/detrasmental)
+
+Email me with any questions: detra.gordon76@gmail.com
