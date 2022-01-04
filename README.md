@@ -25,7 +25,7 @@ An API built for a social network web application where users can share their th
 
 ## Table of Contents
 - [Description](#Description)
-- [User Story](#User)
+- [User Story](#User Story)
 - [Credits](#Credits)
 - [Contribution](#contributes)
 - [Contact Me](#Contact)
