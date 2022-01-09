@@ -21,7 +21,8 @@
  </div>
 
 ## Description
-An API built for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. 
+An API built for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. A Link to the demonstration is here &#x27A1;
+https://watch.screencastify.com/v/2d3b49kzeindz8DiW1Em
 
 ## Table of Contents
 - [Description](#Description)
